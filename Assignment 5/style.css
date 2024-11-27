@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(167,98,144);
+    border-radius: 8px;
+}
+
+h1 {
+    color: black;
+    font-size: 24px;
+}
+
+p.description {
+    color: gray;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price .old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.price .new-price {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.buy-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: green;
+}
