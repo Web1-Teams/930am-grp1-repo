@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Dropdown from "./DropDown";
 import FirstDropDown from "./FirstDropDown";
 
+
 const Nav = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -36,7 +37,7 @@ const Nav = () => {
             </button>
             {/* dropdown menu*/}
             {isDropdownOpen && (
-              <div className="  border shadow-md  absolute my-4 bg-blue-300 p-4 space-y-2 rounded-lg text-center font-bold  w-48 right-0 top-16 ">
+              <div className="  border shadow-md  absolute my-3.5 bg-blue-300 p-4 space-y-2 rounded-lg text-center font-bold  w-48 right-0 top-16 ">
                 <Dropdown />
               </div>
             )}
