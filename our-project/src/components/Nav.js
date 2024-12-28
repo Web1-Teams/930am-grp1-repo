@@ -17,7 +17,7 @@ const Nav = () => {
       <div className="flex  flex-shrink-0  items-center mx-2 ">
         <a href="#homepage">
           <img
-            src="./Assert/logo without bg-2.png"
+            src="./assets/logo without bg-2.png"
             alt="Logo"
             className=" h-24 w-auto "
           />
