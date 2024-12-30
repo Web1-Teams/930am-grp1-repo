@@ -4,6 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+node_modules/.cache/.eslintcache
+node_modules/.cache
+
+
 
 # testing
 /coverage
