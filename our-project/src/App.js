@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const ProductCard = ({ product }) => {
     const [inCart, setInCart] = useState(false);
 
+
     const handleAddToCart = () => {
         setInCart(true);
         alert(`${product.title} has been added to your shopping bag!`);
