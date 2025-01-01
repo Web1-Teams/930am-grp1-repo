@@ -11,8 +11,8 @@ const Footer = () => {
             <h4 className="text-lg font-medium mb-8">Company</h4>
             <ul className="list-none">
               <li>
-                <a href ="#"
-                  
+                <a  href ="#"
+                
                   className="text-blue-950 hover:text-white transition"
                 >
                   About us
