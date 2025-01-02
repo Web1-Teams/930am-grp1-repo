@@ -1,4 +1,3 @@
-
 import React from 'react'
 import ProductInBag from './ProductInBag';
 import OrderSummary from './OrderSummary';
