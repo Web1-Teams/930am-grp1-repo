@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './App.css';
 
-const ProductCard = ({ product }) => {
-    const [inCart, setInCart] = useState(false);
+function App() {
+  return (
+    <div className="App">
+ 
 
+<<<<<<< HEAD
 
 
     const handleAddToCart = () => {
@@ -75,5 +79,11 @@ const App = () => {
         </div>
     );
 };
+=======
+    </div>
+    
+  );
+}
+>>>>>>> a14046ca88b35b8052462a12d75d0d911ac35d8c
 
 export default App;
