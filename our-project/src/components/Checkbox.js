@@ -1,8 +1,8 @@
 import React from "react";
 
-const Checkbox = ({ value }) => {
+const Checkbox = ({ name }) => {
     return(
-        <input  type="checkbox" value={value} />
+        <label className="text-xl text-sky-900 font-bold "><input  type="checkbox" /> {name} </label> 
     );
 
 };

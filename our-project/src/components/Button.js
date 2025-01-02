@@ -4,8 +4,8 @@ const Button = ({ name , link}) => {
     return (
 
         
-    <a href={link} className="rounded-lg text-sm w-36 text-slate-200  bg-sky-900 hover:bg-sky-950  cursor-pointer">{name}</a>
-
+        <a href={link} className=" text-base text-sky-900 font-bold hover:underline cursor-pointer">{name}</a>
+    
     );
 };
 
