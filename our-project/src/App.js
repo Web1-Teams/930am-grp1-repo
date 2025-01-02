@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-import './App.css';
-
-
-function App() {
-  return (
-    <div className="App">
- 
-    </div>
-  );
-}
-=======
 import React, { useState } from 'react';
 
 const ProductCard = ({ product }) => {
     const [inCart, setInCart] = useState(false);
->>>>>>> 12bcb497181c7c1dab20f1e95ef1400b66c4ef7b
+
 
 
     const handleAddToCart = () => {
