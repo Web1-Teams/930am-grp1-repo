@@ -49,4 +49,8 @@ const App = () => {
     );
 };
 
+<<<<<<< HEAD
 export default App; // تصدير المكوّن الرئيسي للاستخدام في ملف index.js
+=======
+export default ProductCard; // تصدير المكوّن للاستخدام في أماكن أخرى
+>>>>>>> 38b58f92a40419ee3ce0841ab12c721eacbb59d6
