@@ -1,9 +1,10 @@
 import React from 'react';
-
-const  Product= ({ name, price }) => {
-
+const  Product= ({ id, name, price,RemoveItem }) => {
+  
+  
   return (
     <div className="flex items-center bg-blue-300 rounded-lg p-1 m-1 shadow">
+        
       {/* Product Image */}
       <img src="#"
         alt="Product"
@@ -31,7 +32,7 @@ const  Product= ({ name, price }) => {
        {/* sub total for each product */}
        <p className="flex-grow px-2 text-left font-bold text-lg items-start">Sub-total: ₪{ }</p>
       {/* Remove Button */}
-      <button className="bg-red-500 text-white px-2 py-2 mr-1 font-bold rounded-lg hover:bg-red-600">
+      <button className="bg-red-500 text-white px-2 py-2 mr-1 font-bold rounded-lg hover:bg-red-600" onClick={() => RemoveItem(id)}>
         Remove
       </button>
 
@@ -40,3 +41,4 @@ const  Product= ({ name, price }) => {
 }
 
 export default Product;
+
