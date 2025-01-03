@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+
+.npm/
 node_modules/.cache/
 node_modules/.cache/.eslintcache
 
