@@ -3,7 +3,7 @@ import React from 'react';
 
 const OrderSummary = ({ total }) => {
   const handleBuy = () => {
-    alert('Item has been purchased!');
+    alert('Thank you for your order! Your items will be shipped soon.!');
   };
   return (
     <div className="order-summary">
