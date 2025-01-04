@@ -1,15 +1,14 @@
-import './App.css';
+import React from 'react';
+import ShopByCategoryPage from './ShopByCategoryPage';
+import './App.css'; // CSS موجود هنا
 
-function App() {
-
-
+const App = () => {
   return (
-    <div className="App">
-      
+    <div>
+      <ShopByCategoryPage />
     </div>
   );
-
-}
-
+};
 
 export default App;
+
