@@ -1,36 +1,36 @@
 import React, { useState } from 'react';
 
-// مكوّن Card لعرض معلومات المنتج
+// Component: Card to display product details
 const ProductCard = ({ product }) => {
-    // حالة لتتبع ما إذا كان المنتج قد تم إضافته إلى العربة أم لا
+    // State to track if the product is added to the shopping cart
     const [inCart, setInCart] = useState(false);
 
-    // دالة لإضافة المنتج إلى العربة
+    // Function to add the product to the cart
     const handleAddToCart = () => {
-        setInCart(true); // تغيير الحالة إلى "تمت إضافته"
-        alert(${product,title} has been added to your shopping bag!); // عرض رسالة للمستخدم
+        setInCart(true); // Update state to indicate the product is added
+        alert(product.title + " has been added to your shopping bag!"); // Show a message to the user
     };
 
     return (
         <div className="p-5 bg-blue-100 shadow-lg rounded-lg">
-            {/* صورة المنتج */}
+            {/* Product image */}
             <img 
                 src={product.image} 
                 alt={product.title} 
                 className="w-full h-auto rounded-lg mb-4" 
             />
             
-            {/* عنوان المنتج */}
+            {/* Product title */}
             <h1 className="text-xl font-bold text-blue-950 mb-2">
                 {product.title}
             </h1>
             
-            {/* وصف المنتج */}
+            {/* Product description */}
             <p className="text-black-700 text-lg leading-relaxed">
                 {product.description}
             </p>
             
-            {/* السعر القديم والجديد للمنتج */}
+            {/* Product price (current and old) */}
             <div className="flex flex-col justify-between items-start mt-6">
                 <span className="text-black text-2xl font-bold mb-1">
                     {product.price}
@@ -40,13 +40,13 @@ const ProductCard = ({ product }) => {
                 </span>
             </div>
             
-            {/* زر إضافة المنتج إلى العربة */}
+            {/* Button to add the product to the shopping cart */}
             <button 
-                onClick={handleAddToCart} // عند الضغط، يتم إضافة المنتج إلى العربة
+                onClick={handleAddToCart} // On click, add product to the cart
                 className={inline-block mt-4 px-6 py-2 ${inCart ? 'bg-gray-400' : 'bg-blue-700'} text-white text-center rounded flex items-center justify-center space-x-2}
-                disabled={inCart} // تعطيل الزر إذا تم إضافة المنتج بالفعل
+                disabled={inCart} // Disable button if the product is already added
             >
-                <i className="fas fa-shopping-bag"></i> {/* أيقونة العربة */}
+                <i className="fas fa-shopping-bag"></i> {/* Cart icon */}
                 <span className="font-bold">
                     {inCart ? 'Added to Cart' : 'Add To Your Shopping Bag'}
                 </span>
@@ -55,4 +55,4 @@ const ProductCard = ({ product }) => {
     );
 };
 
-export default ProductCard; // تصدير المكوّن للاستخدام في أماكن أخرى
+export default ProductCard; // Export the component for use in other parts of the app
