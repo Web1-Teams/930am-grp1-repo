@@ -5,7 +5,7 @@ import React from 'react'
 const Hero = () => {
 
   return (  
-    <article className="h-screen max-w-full bg-blue-200 flex flex-wrap rounded-xl ">
+    <article className="h-screen max-w-full bg-white flex flex-wrap rounded-xl ">
 
   {/* image*/}
     <div className="w-full md:w-1/2  py-0 h-auto flex justify-start items-center ">

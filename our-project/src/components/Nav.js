@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Dropdown from "./DropDown";
 import FirstDropDown from "./FirstDropDown";
-
+import {Link} from "react-router-dom";
 
 const Nav = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -15,13 +15,13 @@ const Nav = () => {
     <nav className="bg-blue-300 flex sticky top-0 shadow-lg w-full rounded-xl border border-gray-300 justify-between p-4 items-center ">
       {/* main logo */}
       <div className="flex  flex-shrink-0  items-center mx-2 ">
-        <a href="#homepage">
+        <Link to="/HomePage">
           <img
             src="./assets/logo without bg-2.png"
             alt="Logo"
             className=" h-24 w-auto "
           />
-        </a>
+      </Link>
       </div>
 
       {/* other elements */}
@@ -46,34 +46,35 @@ const Nav = () => {
           <li className="hidden md:block hover:text-xl">
 
             {/*sales */}
-            <a
+            <Link to="../pages/HomePage"
               className=" transition-color text-blue-950 text-xl hover:text-yellow-500 hover:text-2xl"
-              href="brands.html"
-            >
+              >
+           
               Sales
-            </a>
+              </Link>
           </li>
 
+       
           <li className="hidden  md:block transition-color hover:text-xl">
       
-            {/*brands*/}
-            <a
+            {/**/}
+            <Link to="/Profile"
               className="transition-color text-blue-950 text-xl hover:text-yellow-500 hover:text-2xl"
-              href="brands.html"
+          
             >
-              Brands
-            </a>
+              Profile
+              </Link>
           </li>
 
           <li className="hidden md:block hover:text-xl">
      
             {/*about us */}
-            <a
+            <Link to="/AboutUs"
               className=" transition-color text-blue-950 text-xl hover:text-yellow-500 hover:text-2xl"
-              href="brands.html"
+              
             >
               About us
-            </a>
+              </Link>
           </li>
 
           {/*}
@@ -86,8 +87,8 @@ const Nav = () => {
           <li>
             {" "}
             {/*shopping bag logo */}
-            <a
-              href="shopping-bag.html"
+             <Link to="#"
+             
               className="text-blue-950 transition-color  hover:text-yellow-500 "
             >
               <button>
@@ -103,19 +104,19 @@ const Nav = () => {
                     clipRule="evenodd"
                   />
                 </svg>
+          
               </button>
-            </a>
+              </Link>
           </li>
 
           <li>
-            {" "}
+       
             {/*profile logo */}
-            <a
-              href="login.html"
+             <Link to="/NewAccount"
               className="text-blue-950 transition-color  hover:text-yellow-500"
             >
               <button>
-                {" "}
+              
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -129,7 +130,7 @@ const Nav = () => {
                   />
                 </svg>
               </button>
-            </a>
+            </Link>
           </li>
 
           <li onClick={DropdownOpen} className="md:hidden flex">

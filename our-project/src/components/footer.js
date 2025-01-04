@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Footerabd = () => {
   return (
@@ -10,21 +11,14 @@ const Footerabd = () => {
             <h4 className="text-lg text-blue-950 font-medium mb-8 hover:text-yellow-500 hover:text-2xl ">Company</h4>
             <ul className="list-none">
               <li>
-                <a
-                  href="#about"
-                  className="text-blue-950 hover:text-white transition "
-                >
+                <Link to="/AboutUs"
+               
+                  className="text-blue-950 hover:text-white transition ">
+                
                   About Us
-                </a>
+                  </Link>
               </li>
-              <li>
-                <a
-                  href="#careers"
-                  className="text-blue-950 hover:text-white transition"
-                >
-                  Careers
-                </a>
-              </li>
+             
             </ul>
           </div>
 
@@ -33,20 +27,20 @@ const Footerabd = () => {
             <h4 className="text-lg text-blue-950 font-medium mb-8 hover:text-yellow-500 hover:text-2xl">Mobile Apps</h4>
             <ul className="list-none">
               <li>
-                <a
-                  href="#android"
+                  <Link to="#"
+                
                   className="text-blue-950 hover:text-white transition"
                 >
                   Android
-                </a>
+                  </Link>
               </li>
               <li>
-                <a
+                <Link to="#"
                   href="#ios"
                   className="text-blue-950 hover:text-white transition"
                 >
                   iOS
-                </a>
+                  </Link>
               </li>
             </ul>
           </div>
@@ -56,28 +50,28 @@ const Footerabd = () => {
             <h4 className="text-lg text-blue-950 font-medium mb-8 hover:text-yellow-500 hover:text-2xl">Customer Service</h4>
             <ul className="list-none">
               <li>
-                <a
-                  href="#contact"
+                <Link to="/Contact"
+                  
                   className="text-blue-950 hover:text-white transition"
                 >
                   Contact
-                </a>
+                  </Link>
               </li>
               <li>
-                <a
-                  href="#faq"
+                     <Link to="/FAQs"
+         
                   className="text-blue-950 hover:text-white transition"
                 >
                   FAQ
-                </a>
+                  </Link>
               </li>
               <li>
-                <a
-                  href="#return-policy"
+                <Link to="/PagePolicies"
+                 
                   className="text-blue-950 hover:text-white transition"
                 >
                   Return & Exchange Policy
-                </a>
+                  </Link>
               </li>
             </ul>
           </div>
@@ -88,30 +82,30 @@ const Footerabd = () => {
               Follow Us
             </h4>
             <div className="flex space-x-4">
-              <a
+               <Link to="#"
                 href="#facebook"
                 className="flex items-center justify-center h-10 w-10 bg-blue-900 rounded-full text-white hover:bg-yellow-600 transition"
               >
                 <i className="fa-brands fa-facebook-f"></i>
-              </a>
-              <a
+                </Link>
+            <Link to="#"
                 href="#twitter"
                 className="flex items-center justify-center h-10 w-10 bg-blue-400 rounded-full text-white hover:bg-yellow-600 transition"
               >
                 <i className="fa-brands fa-twitter"></i>
-              </a>
-              <a
+                </Link>
+           <Link to="#"
                 href="#instagram"
                 className="flex items-center justify-center h-10 w-10 bg-pink-500 rounded-full text-white hover:bg-yellow-600  transition"
               >
                 <i className="fa-brands fa-instagram"></i>
-              </a>
-              <a
+                </Link>
+              <Link to="#"
                 href="#linkedin"
                 className="flex items-center justify-center h-10 w-10 bg-blue-600 rounded-full text-white hover:bg-yellow-600  transition"
               >
                 <i className="fa-brands fa-linkedin-in"></i>
-              </a>
+                </Link>
             </div>
           </div>
         </div>
@@ -123,9 +117,9 @@ const Footerabd = () => {
           <small>
             Electronice.com © 2017 - 2024. Yatsiv St 128, Jerusalem; Phone:
             123-123-123-123; All Rights Reserved. Designed by{" "}
-            <a href="https://electronice.com" className="text-yellow-500 underline">
+            <Link to="#" className="text-yellow-500 underline">
               Electronice.com
-            </a>
+              </Link>
           </small>
         </p>
       </div>
