@@ -3,7 +3,7 @@ import ProductCard from './ProductCard';
 
 const BissellProductsPage = ({ products }) => {
     const BissellProducts = products.filter(
-        product => !product.salePrice && product.brand.toLowerCase() === 'Bissell'
+        product => !product.salePrice && product.brand === 'Bissell'
     );
 
 

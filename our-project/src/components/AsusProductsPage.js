@@ -3,7 +3,7 @@ import ProductCard from './ProductCard';
 
 const AsusProductsPage = ({ products }) => {
     const AsusProducts = products.filter(
-        product => !product.salePrice && product.brand.toLowerCase() === 'Asus'
+        product => !product.salePrice && product.brand === 'Asus'
     );
 
 
