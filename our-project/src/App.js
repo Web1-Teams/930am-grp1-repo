@@ -1,8 +1,10 @@
 import React from 'react';
-import './App.css';
+import Footerabd from './components/Footer';
+
 function App() {
   return (
 <div className="App">
+<Footerabd/>
     </div>
   );
 }
