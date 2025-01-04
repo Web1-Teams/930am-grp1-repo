@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bfdbfe; /* لون أزرق فاتح (blue-200) */
+    color: #333;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #555;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.breadcrumb span {
+    color: #333;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background-color: #fff; /* خلفية بيضاء للقسم */
+    border-radius: 10px; /* حواف مستديرة */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+
+.filters {
+    width: 20%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.filters h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.clear-filters {
+    display: block;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.filter-section h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.filter-section label {
+    display: block;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.main-content {
+    width: 75%;
+}
+
+.main-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.controls label {
+    font-size: 14px;
+}
+
+.controls select {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-list {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.continue-button {
+    text-align: right;
+}
+
+.continue-button button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #0056b3;
+}
