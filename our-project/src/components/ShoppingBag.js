@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductInBag from './ProductInBag';
 import OrderSummary from './OrderSummary';
-
+import data from './data'
 
 const ShoppingBag = () => {
 
@@ -15,7 +15,7 @@ const ShoppingBag = () => {
 
     {/* Products */}
     <main className="flex flex-col p-3 shadow-md bg-blue-50 text-blue-950 rounded-lg h-auto md:w-2/3">
-      <ProductInBag name="Product Name" price="100" />
+      <ProductInBag name={data.brandData[1].name} price={data.brandData[1].price} />
     </main>
 
     {/* Order Summary */}
