@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <link rel="stylesheet" href="GamePage.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="#">Home</a> &gt; <span>Gaming</span>
+    </div>
+    <div class="container">
+        <aside class="filters">
+            <h3>Filter</h3>
+            <a href="#" class="clear-filters">Clear all</a>
+            <div class="filter-section">
+                <h4>Product availability</h4>
+                <label>
+                    <input type="checkbox" name="coming-soon"> Coming Soon
+                </label>
+                <label>
+                    <input type="checkbox" name="in-stock"> In Stock
+                </label>
+            </div>
+        </aside>
+        <main class="main-content">
+            <h1>Gaming</h1>
+            <div class="controls">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="default">Sort</option>
+                    <option value="name-asc">Name (A - Z)</option>
+                    <option value="name-desc">Name (Z - A)</option>
+                    <option value="price-low-high">Price (Low > High)</option>
+                    <option value="price-high-low">Price (High > Low)</option>
+                    <option value="rating-high">Rating (Highest)</option>
+                    <option value="rating-low">Rating (Lowest)</option>
+                    <option value="model-asc">Model (A - Z)</option>
+                    <option value="model-desc">Model (Z - A)</option>
+                </select>
+                <label for="show">Show:</label>
+                <select id="show">
+                    <option value="24">24</option>
+                    <option value="50">50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+            <div class="product-list">
+                <p>There are no products to list in this category.</p>
+            </div>
+            <div class="continue-button">
+                <button>CONTINUE</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
