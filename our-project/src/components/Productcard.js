@@ -1,52 +1,34 @@
-import React from 'react'; // استيراد مكتبة React
-import ProductCard from './components/ProductCard'; // استيراد مكوّن ProductCard من ملفه
-
-// المكوّن الرئيسي للتطبيق
-const App = () => {
-    // مصفوفة تحتوي على معلومات المنتجات
-    const products = [
-        {
-            id: 1,
-            title: "Gaming",
-            description: "PlayStation 5, 825GB SSD, DualSense controller, 4K graphics.",
-            price: "₪2699",
-            oldPrice: "₪3299",
-            image: "https://cdn.salla.sa/qYApV/oHVDxf8xGAXBznRB5eaKAaLktSTzuedRmoqTuUiG.jpg",
-        },
-        {
-            id: 2,
-            title: "Kitchen",
-            description: "LG refrigerator, silver color, 493 litres, inverter motor, electricity saving.",
-            price: "₪3790",
-            oldPrice: "₪5463",
-            image: "https://m.media-amazon.com/images/I/61OuXgnfsCL._AC_UF1000,1000_QL80_.jpg",
-        },
-        {
-            id: 3,
-            title: "Coffee",
-            description: "Nespresso coffee machine, premium design, with milk frother.",
-            price: "₪890",
-            oldPrice: "₪1200",
-            image: "https://sc01.alicdn.com/kf/HTB1gt3gOFXXXXXyaXXXq6xXFXXXR/Best-espresso-coffee-machines-for-home-fully.jpg",
-        },
-        {
-            id: 4,
-            title: "Fridge",
-            description: "LG refrigerator, silver color, 493 litres, inverter motor, electricity saving.",
-            price: "₪3790",
-            oldPrice: "₪5463",
-            image: "https://sbitany.com/image/cache/catalog/107-230-0060-0070-20201109114838-270x270.jpg",
-        },
-    ];
-
+import React from 'react';
+const ProductCard = ({ product }) => {
+    const isOnSale = product.salePrice !== undefined && product.salePrice !== null;
     return (
-        <div className="container mx-auto my-10 p-5 grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* عرض قائمة المنتجات باستخدام مكوّن ProductCard */}
-            {products.map(product => (
-                <ProductCard key={product.id} product={product} />
-            ))}
+        <div className="p-3 bg-blue-100 shadow-lg rounded-lg w-72">
+            <div className="flex justify-center mb-1.5">
+                <img
+                    src={product.image["1"]}
+                    alt={product.name}
+                    className="w-full h-auto rounded-lg"
+                />
+            </div>
+            <h1 className="text-lg font-bold text-blue-900 mb-2">{product.name}</h1>
+            <p className="text-blue-950 text-sm leading-relaxed ">{product.description}</p>
+            <div className="flex flex-col justify-between items-start mt-2">
+                {isOnSale ? (
+                    <>
+                        <span className="text-red-500 text-xl font-bold mb-1">
+                        ₪{product.salePrice}
+                        </span>
+                        <span className="text-gray-400 line-through">
+                        ₪{product.price}
+                        </span>
+                    </>
+                ) : (
+                    <span className="text-blue-900 text-xl font-bold mb-1">
+                        ₪{product.price}
+                    </span>
+                )}
+            </div>
         </div>
     );
 };
-
-export default App; // تصدير المكوّن الرئيسي للاستخدام في ملف index.js
+export default ProductCard;
