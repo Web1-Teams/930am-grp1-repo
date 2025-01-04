@@ -1,5 +1,10 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "react-router-dom": "^7.1.1"
+=======
+    "react-scripts": "^5.0.1",
+    "tailwindcss": "^3.4.17"
+>>>>>>> 93392713872fa23866d97227a73677c9fa7c40b9
   }
 }
