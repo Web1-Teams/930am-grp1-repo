@@ -53,4 +53,4 @@ const Product = ({ name, price }) => {
   );
 }
 
-export default Product;
+export default Product; 
