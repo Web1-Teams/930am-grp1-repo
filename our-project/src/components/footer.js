@@ -7,12 +7,12 @@ const Footerabd = () => {
         <div className="flex flex-wrap px-8">
           
           <div className="w-1/4 px-4">
-            <h4 className="text-lg text-blue-950 font-medium mb-8 hover:text-yellow-500 hover:text-2xl">Company</h4>
+            <h4 className="text-lg text-blue-950 font-medium mb-8 hover:text-yellow-500 hover:text-2xl ">Company</h4>
             <ul className="list-none">
               <li>
                 <a
                   href="#about"
-                  className="text-blue-950 hover:text-yellow-500 "
+                  className="text-blue-950 hover:text-white transition "
                 >
                   About Us
                 </a>
@@ -20,7 +20,7 @@ const Footerabd = () => {
               <li>
                 <a
                   href="#careers"
-                  className="text-blue-950 hover:text-yellow-500 transition"
+                  className="text-blue-950 hover:text-white transition"
                 >
                   Careers
                 </a>
@@ -28,14 +28,14 @@ const Footerabd = () => {
             </ul>
           </div>
 
-          
+         
           <div className="w-1/4 px-4">
             <h4 className="text-lg text-blue-950 font-medium mb-8 hover:text-yellow-500 hover:text-2xl">Mobile Apps</h4>
             <ul className="list-none">
               <li>
                 <a
                   href="#android"
-                  className="text-blue-950 hover:text-yellow-500 transition"
+                  className="text-blue-950 hover:text-white transition"
                 >
                   Android
                 </a>
@@ -43,7 +43,7 @@ const Footerabd = () => {
               <li>
                 <a
                   href="#ios"
-                  className="text-blue-950 hover:text-yellow-500 transition"
+                  className="text-blue-950 hover:text-white transition"
                 >
                   iOS
                 </a>
@@ -52,13 +52,13 @@ const Footerabd = () => {
           </div>
 
           
-          <div className="w-1/4 px-4 ">
+          <div className="w-1/4 px-4">
             <h4 className="text-lg text-blue-950 font-medium mb-8 hover:text-yellow-500 hover:text-2xl">Customer Service</h4>
             <ul className="list-none">
               <li>
                 <a
                   href="#contact"
-                  className="text-blue-950 hover:text-yellow-500 transition"
+                  className="text-blue-950 hover:text-white transition"
                 >
                   Contact
                 </a>
@@ -66,7 +66,7 @@ const Footerabd = () => {
               <li>
                 <a
                   href="#faq"
-                  className="text-blue-950 hover:text-yellow-500 transition"
+                  className="text-blue-950 hover:text-white transition"
                 >
                   FAQ
                 </a>
@@ -74,7 +74,7 @@ const Footerabd = () => {
               <li>
                 <a
                   href="#return-policy"
-                  className="text-blue-950 hover:text-yellow-500 transition"
+                  className="text-blue-950 hover:text-white transition"
                 >
                   Return & Exchange Policy
                 </a>
@@ -102,13 +102,13 @@ const Footerabd = () => {
               </a>
               <a
                 href="#instagram"
-                className="flex items-center justify-center h-10 w-10 bg-pink-500 rounded-full text-white hover:bg-yellow-600 transition"
+                className="flex items-center justify-center h-10 w-10 bg-pink-500 rounded-full text-white hover:bg-yellow-600  transition"
               >
                 <i className="fa-brands fa-instagram"></i>
               </a>
               <a
                 href="#linkedin"
-                className="flex items-center justify-center h-10 w-10 bg-blue-600 rounded-full text-white hover:bg-yellow-600 transition"
+                className="flex items-center justify-center h-10 w-10 bg-blue-600 rounded-full text-white hover:bg-yellow-600  transition"
               >
                 <i className="fa-brands fa-linkedin-in"></i>
               </a>
