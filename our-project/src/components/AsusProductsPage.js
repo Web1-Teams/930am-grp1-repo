@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductCard from './Productcard';
+import ProductCard from './ProductCard';
 
 const AsusProductsPage = ({ products }) => {
     const AsusProducts = products.filter(
