@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #90CAF9; /* Blue 200 */
+    color: #333;
+}
+
+.breadcrumb {
+    margin: 20px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.category {
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.category img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* تحويل الصور إلى دوائر */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+    background-color: #f0f0f0; /* خلفية فاتحة مائلة إلى الرمادي للصور */
+}
+
+.category:hover img {
+    transform: scale(1.2); /* تكبير الصورة عند المرور */
+}
+
+.category p {
+    margin-top: 10px;
+    color: #555;
+}
+
+
+
+
+
